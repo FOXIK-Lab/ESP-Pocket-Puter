@@ -17,7 +17,7 @@ struct RemoteList {
 const RemoteList ALL_REMOTES[] = {
     { TVS_REMOTES, sizeof(TVS_REMOTES) / sizeof(Remote) },
     { PROJECTORS_REMOTES, sizeof(PROJECTORS_REMOTES) / sizeof(Remote) },
-    //{ ACS_REMOTES, sizeof(ACS_REMOTES) / sizeof(Remote) },
+    { ACS_REMOTES, sizeof(ACS_REMOTES) / sizeof(Remote) },
 };
 
 void IR_RemoteHandler(Remote* remote)
