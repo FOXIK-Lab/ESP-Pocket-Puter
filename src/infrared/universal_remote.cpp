@@ -3,10 +3,18 @@
 #include "remotes/tvs.hpp"
 #include "remotes/acs.hpp"
 #include "remotes/projectors.hpp"
+#include "remotes/iptv.hpp"
+#include "remotes/fans.hpp"
+#include "remotes/audio.hpp"
+#include "remotes/cameras.hpp"
+#include "remotes/gates.hpp"
+#include "remotes/power.hpp"
+#include "remotes/sat.hpp"
+#include "remotes/settor.hpp"
+#include "remotes/streaming.hpp"
 
 #include "../menu.hpp"
 #include "send.hpp"
-
 #include "../display_utils.h"
 
 struct RemoteList {
@@ -18,6 +26,15 @@ const RemoteList ALL_REMOTES[] = {
     { TVS_REMOTES, sizeof(TVS_REMOTES) / sizeof(Remote) },
     { PROJECTORS_REMOTES, sizeof(PROJECTORS_REMOTES) / sizeof(Remote) },
     { ACS_REMOTES, sizeof(ACS_REMOTES) / sizeof(Remote) },
+    { IPTV_REMOTES, sizeof(IPTV_REMOTES) / sizeof(Remote) },
+    { FANS_REMOTES, sizeof(FANS_REMOTES) / sizeof(Remote) },
+    { AUDIO_REMOTES, sizeof(AUDIO_REMOTES) / sizeof(Remote) },
+    { CAMERAS_REMOTES, sizeof(CAMERAS_REMOTES) / sizeof(Remote) },
+    { GATES_REMOTES, sizeof(GATES_REMOTES) / sizeof(Remote) },
+    { POWER_REMOTES, sizeof(POWER_REMOTES) / sizeof(Remote) },
+    { SAT_REMOTES, sizeof(SAT_REMOTES) / sizeof(Remote) },
+    { SETTOR_REMOTES, sizeof(SETTOR_REMOTES) / sizeof(Remote) },
+    { STREAMING_REMOTES, sizeof(STREAMING_REMOTES) / sizeof(Remote) },
 };
 
 void IR_RemoteHandler(Remote* remote)
@@ -59,14 +76,14 @@ void IR_RemoteHandler(Remote* remote)
 
 void IR_UniversalRemote(RemoteType type)
 {
-    Menu menu;
-    Remote* selected_remote = nullptr;
-
-    if (type < 0 || type >= (sizeof(ALL_REMOTES) / sizeof(RemoteList))) {
+    if (static_cast<size_t>(type) >= (sizeof(ALL_REMOTES) / sizeof(RemoteList))) {
         return;
     }
 
-    const RemoteList& list = ALL_REMOTES[type];
+    Menu menu;
+    Remote* selected_remote = nullptr;
+
+    const RemoteList& list = ALL_REMOTES[static_cast<size_t>(type)];
 
     for (size_t i = 0; i < list.count; i++) {
         const Remote& remote = list.remotes[i];
