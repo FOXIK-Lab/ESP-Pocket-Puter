@@ -3,8 +3,7 @@
 #include "../universal_remote.hpp"
 
 const Remote ACS_REMOTES[] PROGMEM = {
-    // ===== СУЩЕСТВУЮЩИЕ БРЕНДЫ (раскомментируйте при необходимости) =====
-    /*
+   
     {
         "Daikin",
         REMOTE_TYPE_AC,
@@ -75,9 +74,7 @@ const Remote ACS_REMOTES[] PROGMEM = {
             {"Cool 64", REMOTE_PROTOCOL_RAW, 38000, "3308 1596 432 410..."},
         }
     },
-    */
-
-    // ===== НОВЫЕ БРЕНДЫ ИЗ FLIPPER-IRDB =====
+    
 
     {
         "Gree",
