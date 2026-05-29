@@ -230,5 +230,313 @@ const Remote TVS_REMOTES[] PROGMEM = {
             {"CH+", REMOTE_PROTOCOL_RC5, "01 00 00 00", "20 00 00 00"},
             {"CH-", REMOTE_PROTOCOL_RC5, "01 00 00 00", "21 00 00 00"},
         }
+    },
+
+    // ===== НОВЫЕ БРЕНДЫ ИЗ FLIPPER-IRDB =====
+    
+    {
+        "Xiaomi",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "7C 83 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "E8 17 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "F0 0F 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "E0 1F 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "F8 07 00 00"},
+            {"Home", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "51 AE 00 00"},
+            {"Source", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "BA 45 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "A5 5A 00 00"},
+            {"Up", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "08 F7 00 00"},
+            {"Down", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "18 E7 00 00"},
+            {"Left", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "28 D7 00 00"},
+            {"Right", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "38 C7 00 00"},
+            {"Select", REMOTE_PROTOCOL_NEC, "DF 20 00 00", "48 B7 00 00"},
+        }
+    },
+    {
+        "Vizio",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+            {"Up", REMOTE_PROTOCOL_NEC, "00 00 00 00", "32 00 00 00"},
+            {"Down", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+            {"Left", REMOTE_PROTOCOL_NEC, "00 00 00 00", "12 00 00 00"},
+            {"Right", REMOTE_PROTOCOL_NEC, "00 00 00 00", "92 00 00 00"},
+            {"Select", REMOTE_PROTOCOL_NEC, "00 00 00 00", "52 00 00 00"},
+        }
+    },
+    {
+        "Insignia",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+            {"Up", REMOTE_PROTOCOL_NEC, "00 00 00 00", "32 00 00 00"},
+            {"Down", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+            {"Left", REMOTE_PROTOCOL_NEC, "00 00 00 00", "12 00 00 00"},
+            {"Right", REMOTE_PROTOCOL_NEC, "00 00 00 00", "92 00 00 00"},
+            {"Select", REMOTE_PROTOCOL_NEC, "00 00 00 00", "52 00 00 00"},
+        }
+    },
+    {
+        "Sceptre",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "RCA",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "54 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "F4 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "74 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "FC 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "B4 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "34 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "E4 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "D4 00 00 00"},
+            {"Up", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "14 00 00 00"},
+            {"Down", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "94 00 00 00"},
+            {"Left", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "54 00 00 00"},
+            {"Right", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "D4 00 00 00"},
+            {"Select", REMOTE_PROTOCOL_RCA, "0F 00 00 00", "74 00 00 00"},
+        }
+    },
+    {
+        "Haier",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Daewoo",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0C 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "10 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "11 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0D 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "20 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "21 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RC5, "00 00 00 00", "38 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RC5, "00 00 00 00", "30 00 00 00"},
+            {"Up", REMOTE_PROTOCOL_RC5, "00 00 00 00", "14 00 00 00"},
+            {"Down", REMOTE_PROTOCOL_RC5, "00 00 00 00", "13 00 00 00"},
+            {"Left", REMOTE_PROTOCOL_RC5, "00 00 00 00", "15 00 00 00"},
+            {"Right", REMOTE_PROTOCOL_RC5, "00 00 00 00", "16 00 00 00"},
+            {"Select", REMOTE_PROTOCOL_RC5, "00 00 00 00", "35 00 00 00"},
+        }
+    },
+    {
+        "Sanyo",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Pioneer",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Medion",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0C 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "10 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "11 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0D 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "20 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "21 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RC5, "00 00 00 00", "38 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RC5, "00 00 00 00", "30 00 00 00"},
+        }
+    },
+    {
+        "Blaupunkt",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0C 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "10 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "11 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0D 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "20 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "21 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RC5, "00 00 00 00", "38 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RC5, "00 00 00 00", "30 00 00 00"},
+        }
+    },
+    {
+        "Element",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Westinghouse",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Magnavox",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0C 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "10 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "11 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0D 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "20 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "21 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RC5, "00 00 00 00", "38 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RC5, "00 00 00 00", "30 00 00 00"},
+        }
+    },
+    {
+        "Dynex",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Emerson",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Funai",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Seiki",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Viore",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_NEC, "00 00 00 00", "02 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "42 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "C2 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_NEC, "00 00 00 00", "82 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_NEC, "00 00 00 00", "22 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_NEC, "00 00 00 00", "A2 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_NEC, "00 00 00 00", "D2 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_NEC, "00 00 00 00", "B2 00 00 00"},
+        }
+    },
+    {
+        "Zenith",
+        REMOTE_TYPE_TV,
+        {
+            {"Power", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0C 00 00 00"},
+            {"VOL+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "10 00 00 00"},
+            {"VOL-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "11 00 00 00"},
+            {"Mute", REMOTE_PROTOCOL_RC5, "00 00 00 00", "0D 00 00 00"},
+            {"CH+", REMOTE_PROTOCOL_RC5, "00 00 00 00", "20 00 00 00"},
+            {"CH-", REMOTE_PROTOCOL_RC5, "00 00 00 00", "21 00 00 00"},
+            {"Input", REMOTE_PROTOCOL_RC5, "00 00 00 00", "38 00 00 00"},
+            {"Menu", REMOTE_PROTOCOL_RC5, "00 00 00 00", "30 00 00 00"},
+        }
     }
 };
