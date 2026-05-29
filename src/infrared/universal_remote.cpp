@@ -10,7 +10,7 @@
 #include "remotes/gates.hpp"
 #include "remotes/power.hpp"
 #include "remotes/sat.hpp"
-#include "remotes/settor.hpp"
+#include "remotes/settop.hpp"
 #include "remotes/streaming.hpp"
 
 #include "../menu.hpp"
@@ -33,7 +33,7 @@ const RemoteList ALL_REMOTES[] = {
     { GATES_REMOTES, sizeof(GATES_REMOTES) / sizeof(Remote) },
     { POWER_REMOTES, sizeof(POWER_REMOTES) / sizeof(Remote) },
     { SAT_REMOTES, sizeof(SAT_REMOTES) / sizeof(Remote) },
-    { SETTOR_REMOTES, sizeof(SETTOR_REMOTES) / sizeof(Remote) },
+    { SETTOP_REMOTES, sizeof(SETTOP_REMOTES) / sizeof(Remote) },
     { STREAMING_REMOTES, sizeof(STREAMING_REMOTES) / sizeof(Remote) },
 };
 
